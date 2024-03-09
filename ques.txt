@@ -1,0 +1,267 @@
+Given an integer array Arr of size N the task is to find the count of elements whose
+value is greater than all of its prior elements.
+Note : 1st element of the array should be considered in the count of the result.
+For example,
+Arr[]={7,4,8,2,9}
+As 7 is the first element, it will consider in the result.
+8 and 9 are also the elements that are greater than all of its previous elements.
+Since total of 3 elements is present in the array that meets the condition.
+Hence the output = 3.
+Example 1:
+Input
+5 -> Value of N, represents size of Arr
+7-> Value of Arr[0]
+4 -> Value of Arr[1]
+8-> Value of Arr[2]
+2-> Value of Arr[3]
+9-> Value of Arr[4]
+Output :
+3
+Example 2:
+5 -> Value of N, represents size of Arr
+3 -> Value of Arr[0]
+4 -> Value of Arr[1]
+5 -> Value of Arr[2]
+8 -> Value of Arr[3]
+9 -> Value of Arr[4]
+Output :
+5
+
+
+16.2.24
+
+
+1.Problem Statement
+
+A washing machine works on the principle of Fuzzy System, the weight of clothes put
+inside it for washing is uncertain But based on weight measured by sensors, it decides
+time and water level which can be changed by menus given on the machine control
+area.
+
+For low level water, the time estimate is 25 minutes, where approximately weight is
+between 2000 grams or any nonzero positive number below that.
+For medium level water, the time estimate is 35 minutes, where approximately weight
+is between 2001 grams and 4000 grams.
+For high level water, the time estimate is 45 minutes, where approximately weight is
+above 4000 grams.
+
+Assume the capacity of machine is maximum 7000 grams
+Where approximately weight is zero, time estimate is 0 minutes.
+Write a function which takes a numeric weight in the range [0,7000] as input and
+produces estimated time as output is: “OVERLOADED”, and for all other inputs, the
+output statement is
+
+
+“INVALID INPUT”.
+Input should be in the form of integer value –
+Output must have the following format –
+Time Estimated: Minutes
+Example:
+Input value
+2000
+Output value
+Time Estimated: 25 minutes
+
+2)
+
+2.problem statement
+
+There is a JAR full of candies for sale at a mall counter. JAR has the
+capacity N, that is JAR can contain maximum N candies when JAR is full. At
+any point of time. JAR can have M number of Candies where M<=N. Candies
+are served to the customers. JAR is never remain empty as when last k
+candies are left. JAR if refilled with new candies in such a way that JAR get
+full.
+
+Write a code to implement above scenario. Display JAR at counter with
+available number of candies. Input should be the number of candies one
+customer can order at point of time. Update the JAR after each purchase and
+display JAR at Counter.
+
+• Output should give number of Candies sold and updated number of Candies
+in JAR.
+• If Input is more than candies in JAR, return: “INVALID INPUT”
+Given,
+N=10, where N is NUMBER OF CANDIES AVAILABLE
+K =< 5, where k is number of minimum candies that must be inside JAR ever.
+
+
+Example 1:(N = 10, k =< 5)
+• Input Value
+3
+Output Value
+NUMBER OF CANDIES SOLD : 3
+NUMBER OF CANDIES AVAILABLE : 7
+
+• Example : (N=10, k<=5)
+• Input Value
+0
+Output Value
+INVALID INPUT NUMBER OF
+CANDIES LEFT : 10
+
+--*
+3.problem statement
+
+Selection of MPCS exams include a fitness test which is conducted on ground.
+There will be a batch of 3 trainees, appearing for running test in track for 3 rounds.
+You need to record their oxygen level after every round. After trainee are finished
+with all rounds, calculate for each trainee his average oxygen level over the 3 rounds
+and select one with highest oxygen level as the most fit trainee. If more than one
+trainee attains the same highest average level, they all need to be selected.
+Display the most fit trainee (or trainees) and the highest average oxygen level.
+
+Note:
+• The oxygen value entered should not be accepted if it is not in the range between 1
+and 100.
+• If the calculated maximum average oxygen value of trainees is below 70 then declare the
+trainees as unfit with meaningful message as “All trainees are unfit.
+• Average Oxygen Values should be rounded.
+
+Example 1:
+INPUT VALUES
+95
+92
+95
+92
+90
+92
+90
+92
+90
+
+OUTPUT VALUES
+Trainee Number : 1
+Trainee Number : 3
+Note:
+Input should be 9 integer values representing oxygen levels entered in order as
+Round 1
+• Oxygen value of trainee 1
+• Oxygen value of trainee 2
+• Oxygen value of trainee 3
+Round 2
+• Oxygen value of trainee 1
+• Oxygen value of trainee 2
+• Oxygen value of trainee 3
+Round 3
+• Oxygen value of trainee 1
+• Oxygen value of trainee 2
+• Oxygen value of trainee 3
+Output must be in given format as in above example. For any wrong input final
+output should display “INVALID INPUT"
+
+
+19-02-2024
+-
+A doctor has a clinic where he serves his patients. The doctor’s consultation fees 
+are different for different groups of patients depending on their age. If the 
+patient’s age is below 17, fees is 200 INR. If the patient’s age is between 17 and 
+40, fees is 400 INR. If patient’s age is above 40, fees is 300 INR. Write a code to 
+calculate earnings in a day for which one array/List of values representing age of 
+patients visited on that day is passed as input.
+Note:
+• Age should not be zero or less than zero or above 120
+• Doctor consults a maximum of 20 patients a day
+• Enter age value (press Enter without a value to stop):
+Example 1:
+Input
+20
+30
+40
+50
+2
+3
+14
+Output
+Total Income 2000 INR
+
+Note: Input and Output Format should be same as given in the above example.
+For any wrong input display INVALID INPUT
+Output Format
+Total Income 2100 INR
+
+--------------------
+
+FULLY AUTOMATIC VENDING MACHINE – dispenses your cuppa on just press of 
+button. A vending machine can serve range of products as follows:
+Coffee
+1. Espresso Coffee
+2. Cappuccino Coffee
+3. Latte Coffee
+Tea
+1. Plain Tea
+2. Assam Tea
+3. Ginger Tea
+4. Cardamom Tea
+5. Masala Tea
+6. Lemon Tea
+7. Green Tea
+8. Organic Darjeeling Tea
+Soups
+1. Hot and Sour Soup
+2. Veg Corn Soup
+3. Tomato Soup
+4. Spicy Tomato Soup
+Beverages
+1. Hot Chocolate Drink
+2. Badam Drink
+3. Badam-Pista Drink
+Write a program to take input for main menu & sub menu and display the name 
+of sub menu selected in the following format (enter the first letter to select 
+main menu):
+Welcome to CCD
+Enjoy your
+Example 1:
+Input:
+c
+1
+Output
+Welcome to CCD!
+Enjoy your Espresso Coffee!
+Example 2:
+Input:
+t
+9
+Output
+INVALID OUTPUT!
+
+
+Hard
+
+2.Problem Statement -: In this even odd problem Given a range [low, high] (both inclusive), select K numbers from the range (a number can be chosen multiple times) such that sum of those K numbers is even.
+Calculate the number of all such permutations.
+As this number can be large, print it modulo (1e9 +7).
+Input
+•	First line contains two space separated integers denoting low and high respectively
+•	Second line contains a single integer K.
+Output
+•	Print a single integer denoting the number of all such permutations
+Time Limit
+1
+Examples
+Example 1
+Input
+4 5
+3
+Output
+4
+Explanation
+There are 4 valid permutations viz. {4, 4, 4}, {4, 5, 5}, {5, 4, 5} and {5, 5, 4} which sum up to an even number.
+Example 2
+Input
+1 10
+2
+Output
+50
+Explanation
+There are 50 valid permutations viz. {1,1}, {1, 3},.. {1, 9} {2,2}, {2, 4},… {2, 10} . . . {10, 2}, {10, 4},… {10, 10}. These 50 permutations, each sum up to an even number.
+
+444
+445
+454
+455
+
+544
+555
+545
+
